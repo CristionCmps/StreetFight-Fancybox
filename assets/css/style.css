@@ -7,8 +7,8 @@
 }
 
 :root {
-    --white: #FFFFFF;
     --oswald: 'Oswald';
+    --white: #FFFFFF;
     --shadow: #754E71;
     --light-blue: #99BFFD;
     --light-blue2: #324362;
@@ -18,6 +18,8 @@
     --dark-yellow: #8F4005;
     --dark-yellow2: #5A3A16;
 }
+
+/* Styling Nav */
 
 .nav-container {
     height: 67px;
@@ -63,6 +65,8 @@ nav a {
     font-family: var(--oswald);
 }
 
+/* Styling IMG - Container  */
+
 .top-container {
     height: 1080px;
     width: 100%;
@@ -72,3 +76,37 @@ nav a {
     background-size: cover;
     background-position: center;
 }
+
+/* Styling About / Details  */
+
+.about-container {
+    height: 500px;
+    width: 100%;
+    background-image: url(../img/about-img.png);
+    border-bottom: 1px var(--dark-pink);
+}
+
+.about {
+    float: right !important;
+    width: auto;
+    max-width: 440px;
+    margin-top: 70px;
+}
+
+.title-about h1 {
+    font-family: var(--oswald);
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 90px;
+    color: var(--white);
+    text-shadow: 4px 4px 0px var(--shadow);
+}
+
+.text-about p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--oswald);
+    color: var(--white);
+    border-top: 1px solid var(--white);
+}
+
