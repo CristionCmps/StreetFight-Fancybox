@@ -62,3 +62,13 @@ nav a {
     line-height: 27px;
     font-family: var(--oswald);
 }
+
+.top-container {
+    height: 1080px;
+    width: 100%;
+    background-image: url(../img/main-img.png) !important;
+    border-bottom: 1px solid red;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
