@@ -107,6 +107,25 @@ nav a {
     font-weight: 500;
     font-family: var(--oswald);
     color: var(--white);
-    border-top: 1px solid var(--white);
 }
 
+.about span {
+    display: block;
+    height: 2px;
+    border-radius: 3px;
+    background-color: white;
+    margin-bottom: 20px;
+    margin: 20px 0;
+}
+
+.details {
+    border: none;
+    clip-path: polygon(5% 0, 100% 0, 100% 80%, 95% 100%, 0 100%, 0 25%);
+    height: 60px;
+    padding-left: 105px;
+    padding-right: 105px;
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 25px;
+    font-family: var(--oswald);
+}
