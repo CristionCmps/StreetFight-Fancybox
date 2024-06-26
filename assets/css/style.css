@@ -19,102 +19,6 @@
     --dark-yellow2: #5A3A16;
 }
 
-
-/* ========================== MENU MOBILE ============================ */
-
-/* .hamburguer {
-    position: relative;
-    background-color: var(--colorsecondary);
-    display: none;
-    width: 25px;
-    height: 4px;
-    top: 8px;
-    left: 0;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-    z-index: 1;
-    border-radius: 5px;
-}
-.hamburguer:before, .hamburguer:after {
-    background-color: var(--colorsecondary);
-    content: '';
-    display: none;
-    height: 100%;
-    position: absolute;
-    transition: 500ms ease;
-    border-radius: 5px;
-}
-.hamburguer:before, .hamburguer:after {
-    width: 25px;
-}
-.hamburguer:before {
-    top: -8px;
-}
-.hamburguer:after {
-    top: 8px;
-} */
-
-.icon-line__menu {
-    position: relative;
-    background-color: var(--black);
-    display: block;
-    width: 30px;
-    height: 5px;
-    top: -32px;
-    right: 25px;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-    z-index: 1;
-    border-radius: 5px;
-}
-
-.icon__menu--mobile {
-    position: absolute;
-    right: 0;
-}
-
-.icon-line__menu:before,
-.icon-line__menu:after {
-    width: 30px;
-}
-
-.icon-line__menu:before {
-    top: -10px;
-}
-
-.icon-line__menu:after {
-    top: 10px;
-}
-
-.icon-line__menu:before,
-.icon-line__menu:after {
-    background-color: var(--black);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: 500ms ease;
-    border-radius: 5px;
-}
-
-.container__menu--mobile.active {
-    position: absolute;
-    z-index: 99;
-    right: 0;
-    background-color: var(--white);
-    padding: 15px;
-    display: block;
-    width: 100%;
-    text-align: center;
-}
-
-
 /* Styling Nav */
 .nav-container {
     height: 67px;
@@ -161,7 +65,6 @@ nav a {
 }
 
 /* Styling IMG - Container  */
-
 .top-container {
     height: 1080px;
     width: 100%;
@@ -173,7 +76,6 @@ nav a {
 }
 
 /* Styling About / Details  */
-
 .about-container {
     height: 500px;
     width: 100%;
@@ -350,6 +252,17 @@ nav a {
     transform: scale(1.1);
 }
 
+@media (min-width: 444px) {
+    .nav ul {
+        display: none;
+    }
+
+    .character li {
+        align-items: center;
+    }
+    
+}
+
 @media (max-width: 700px) {
     #menu {
         display: none;
@@ -359,6 +272,18 @@ nav a {
         display: block;
     }
 
+}
+
+@media (min-width: 1915px) {
+    .top-container {
+        height: 1380px;
+    }
+
+    .about-container {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 
