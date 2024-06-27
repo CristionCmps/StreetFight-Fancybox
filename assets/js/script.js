@@ -9,7 +9,7 @@
 
 $(document).ready(function () {
     // ABRIR BOX MENU MOBILE
-    $('.mobile-menu').click(function() {
-        $('.container__menu--mobile').toggleClass('active');
+    $('.icone__sandwich').click(function() {
+        $('.nav__mobile').toggleClass('active');
     });
   });
