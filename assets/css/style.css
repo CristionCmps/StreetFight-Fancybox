@@ -267,27 +267,71 @@ nav a {
     transform: scale(1.1);
 }
 
-.menu__mobile {
+.mobile-menu {
+    display: none;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(69, 33, 138, .7));
+    border-bottom: 2px solid var(--white);
+    width: 100%;
+}
+
+.icon-line__menu {
+    /* position: relative; */
+    background-color: black;
+    display: block;
+    width: 30px;
+    height: 5px;
+    /* top: -32px; */
+    /* right: 25px; */
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.icon__menu--mobile {
+    display: block;
+    width: 30px;
+}
+
+.icon__menu--mobile::after,
+.icon__menu--mobile::before {
+    content: '';
+    display: block;
+    width: 30px;
+    border: 2px solid var(--white);
+}
+
+.container__menu--mobile.active {
+    position: absolute;
+    z-index: 99;
+    background-color: black;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+}
+
+
+/* .menu_mobile {
     display: none;
 }
 
-.menu__mobile {
+.menu_mobile {
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(69, 33, 138, .7));
     border-bottom: 2px solid var(--white);
     width: 100%;
 }
 
 
-.nav__mobile {
+.mobile_nav {
     display: none;
 }
 
-.nav__mobile.active {
+.mobile_nav.active {
     display: block;
     height: 67px;
 }
 
-#mobile_nav a {
+ #mobile_nav a {
     text-decoration: none;
     padding-right: 30px;
     padding-left: 30px;
@@ -298,24 +342,24 @@ nav a {
     font-family: var(--oswald);
 }
 
-.icone__sandwich {
+.icone_sandwich {
     display: inline-block;
 }
 
-.icone__sandwich span {
+.icone_sandwich span {
     display: block;
     width: 30px;
     border: 2px solid var(--white);
     margin: 5px 0;
 }
 
-.icone__sandwich::after,
-.icone__sandwich::before {
+.icone_sandwich::after,
+.icone_sandwich::before {
     content: '';
     display: block;
     width: 30px;
     border: 2px solid var(--white);
-}
+}    */
 
 @media (min-width: 1195px) {
     .top-container {
@@ -330,11 +374,44 @@ nav a {
 }
 
 @media (max-width: 767px) {
-    .menu__mobile {
+    .mobile-menu {
         display: block;
+        position: absolute;
+        width: 100%;
+        top: 59px;
     }
 
-    .c-menu {
+    nav a {
         display: none;
+    }
+
+    .nav-container {
+        height: 61px;
+    }
+
+    .character h2 {
+        font-size: 59px;
+    }
+
+    .character ul {
+        margin-right: 25px;
+    }
+
+    .character img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .gallery-container-main h3 {
+        font-size: 59px;
+    }
+
+    .fancybox img {
+        width: 300px;
+        height: 202px;
+    }
+
+    .title-about h1 {
+        font-size: 60px;
     }
 }
